@@ -17,3 +17,8 @@ html {
 #time {
   /* margin-right: auto; */
 }
+
+#brButton {
+  padding: 2px;
+  color: "red";
+}
