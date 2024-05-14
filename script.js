@@ -49,6 +49,8 @@ const state = {
   }
 }
 
+const intervalTime = 10;
+
 $("#input").on("keypress", e => {
   switch (e.which) {
     case 13:
@@ -95,7 +97,7 @@ function indexTense(tense) {
 }
 
 function intervalFunc() {
-  state.time -= 1;
+  state.time -= intervalTime;
   if (state.time <= 1) {
     clearInterval(interval);
     alert("Time's up, your score was " + state.points);
@@ -111,7 +113,7 @@ const randomize = () => {
 function start() {
   state.points = 0;
   state.time = 9001;
-  interval = setInterval(intervalFunc, 1);
+  interval = setInterval(intervalFunc, intervalTime);
   state.text = "Type the verb in the correct tense"
   randomize();
 }
