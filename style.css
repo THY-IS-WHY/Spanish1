@@ -1,0 +1,19 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.inline, #time, #tense, #verb {
+  display: inline;
+}
+
+#tense, #verb {
+  font-size: 2rem;
+}
+
+#point-container {
+}
+
+#time {
+  /* margin-right: auto; */
+}
